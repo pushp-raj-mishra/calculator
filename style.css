@@ -1,0 +1,46 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    padding: 10px;
+    gap: 10px;
+}
+
+.display {
+    border: 2px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: 5px;
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.operations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+button {
+    width: 30%;
+    height: auto;
+    border-radius: 0;
+}
+
