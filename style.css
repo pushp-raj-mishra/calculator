@@ -17,7 +17,7 @@ body {
 
 .display {
     border: 2px solid black;
-    padding: 5px;
+    padding: 2px;
     display: flex;
     justify-content: end;
     align-items: end;
