@@ -59,20 +59,29 @@ div.addEventListener("click",()=>handle(ops,'/'));
 let equal = document.querySelector(".equal");
 equal.addEventListener("click",calculate);
 
+let clr = document.querySelector(".clr"); 
+clr.addEventListener("click",()=>{
+    display.textContent = '0';
+    clear = true;
+})
 
 function calculate(){
     let ans = 0;
+    let b = work.pop();
+    let a = work.pop();
     if (ops[0]=='+') {
-        ans = work[0]+work[1];
+        ans = a+b;
     } else if (ops[0]=='-') {
-        ans = work[0]-work[1];
+        ans = a-b;
     } else if (ops[0]=='*') {
-        ans = work[0]*work[1];
+        ans = a*b;
     } else {
-        ans = work[0]/work[1];
+        ans = a/b;
     }
+    ops.pop();
     display.textContent = ans;
-    clear = true;
+    //clear = true;
+    work.push(ans);
 }
 
 
