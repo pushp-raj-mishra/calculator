@@ -61,7 +61,7 @@ equal.addEventListener("click",calculate);
 
 let clr = document.querySelector(".clr"); 
 clr.addEventListener("click",()=>{
-    display.textContent = '0';
+    display.textContent = "0";
     clear = true;
 })
 
